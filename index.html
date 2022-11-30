@@ -50,31 +50,27 @@
         }
         
         .buttons {
-            border: 1px solid blue;
             display: grid;
-            grid-template-columns: 250px 250px;
+            grid-template-columns: 280px 280px;
             margin: 20px;
             
         }
 
         .button {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 230px;
+            width: 220px;
+            height: 46px;
             background: #CF3031;
             border: #CF3031;
             box-shadow: 0px 30px 45px rgba(207, 48, 49, 0.3);
-            border-radius: 15px;  
+            border-radius: 15px; 
         }
-
+        
         .orderonline {
             font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 700;
             font-size: 13px;
-            line-height: 22px;
+            line-height: 13px;
             color: #FFFFFF;
         }
 
@@ -83,16 +79,14 @@
             font-style: normal;
             font-weight: 100;
             font-size: 10px;
-            line-height: 22px;
+            line-height: 13px;
             color: #FFFFFF;
         }
 
-        .link {
-            
-        }
-
         .viewourmenu {
-            display: block;
+            display: flex;
+            height: 40px;
+            align-items: center;
             font-family: 'Roboto', sans-serif;
             font-style: normal;
             font-weight: 700;
@@ -108,17 +102,70 @@
             width: 170px;
             height: 135px;
             left: 70px;
-            top: 570px;
+            top: 630px;
         }
 
         .leaf {
             position: absolute;
-            width: 56.68px;
+            width: 60;
             height: 91.41px;
-            left: 500px;
-            top: 650px;
+            left: 480px;
+            top: 700px;
             filter: drop-shadow(10px 8px 25px rgba(0, 0, 0, 0.35));
-            transform: rotate(22.95deg);
+            transform: rotate(5deg);
+        }
+
+        .redcircle {
+            position: absolute;
+            width: 750px;
+            height: 780px;
+            left: 650px;
+            top: 58px;
+            z-index: -2;
+        }
+
+        .whitecircle {
+            position: absolute;
+            width: 650px;
+            height: 650px;
+            left: 690px;
+            top: 111px;
+            z-index: -1;
+        }
+
+        .pizza {
+            position: absolute;
+            width: 660px;
+            height: 730px;
+            left: 650px;
+            top: 90px; 
+        }
+
+        .plant {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            left: 1180px;
+            top: 16px;
+        }
+
+        .fish {
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            left: 580px;
+            top: 426px;
+            z-index: -1;
+        }
+        
+        .chilli {
+            position: absolute;
+            width: 250px;
+            height: 130px;
+            left: 1080px;
+            top: 710px;
+            filter: drop-shadow(1px 6px 10px rgba(0, 0, 0, 0.41));
+            transform: rotate(-30deg);
         }
 
         .delivery_companies {
@@ -135,8 +182,8 @@
             justify-content: center;
             font-family: 'Roboto', sans-serif;
             font-style: normal;
-            font-weight: 900;
-            font-size: 45px;
+            font-weight: 1200;
+            font-size: 40px;
             line-height: 56px;
             text-align: center;
             letter-spacing: 0.03em;
@@ -151,9 +198,21 @@
             align-items: center;
         }
 
+        .delivery {
+            color: #CF3031;
+        }
+
     </style>
 </head>
 <body class="container">
+    <section><img class="whitecircle" src="Assets/Images/white_circle.png" alt="white_circle"></section>
+    <section><img class="redcircle" src="Assets/Images/red_circle.png" alt="red circle"></section>
+    <section><img class="pizza" src="Assets/Images/pizza.png" alt="pizza"></section>
+    <section><img class="tomato" src="Assets/Images/tomato.png" alt="tomato"></section>
+    <section><img class="leaf" src="Assets/Images/leaf.png"></section>
+    <section><img class="fish" src="Assets/Images/fish.png" alt="fish"></section>
+    <section><img class="chilli" src="Assets/Images/chilli.png" alt="chilli"></section>
+    <section><img class="plant" src="Assets/Images/plant.png" alt="plant"></section>
     <header>
         <div class="logo">
             <svg width="225" height="50" viewBox="0 0 225 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -188,10 +247,9 @@
                 </div>
             </div>
         </article>
-        <section><img class="tomato" src="Assets/Images/tomato.png" alt="tomato"></section>
-        <section><img class="leaf" src="Assets/Images/leaf.png"></section>
+        
         <article class="delivery_companies">
-            <h1 class="deliverypowered">Delivery Now Powered By</h1>
+            <h1 class="deliverypowered"><span class="delivery">Delivery</span>Now Powered By</h1>
             <section class="deliverylogos"><img src="Assets/Images/doordashlogo.png"></section>
             <section class="deliverylogos"><img src="Assets/Images/ubereatslogo.png"></section>
             <section class="deliverylogos"><img src="Assets/Images/favorlogo.png"></section>
